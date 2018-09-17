@@ -1,4 +1,4 @@
-Interseguro
+BIZRUPTIVA
 ===========
 
 Indicaciones del proyecto
