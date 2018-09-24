@@ -790,10 +790,6 @@
                     }
 
                 }
-
-                @include tablet {
-                    width: 100%;
-                }
             }
 
             .content-eco {
@@ -908,6 +904,10 @@
                     @include tablet {
                         width: auto;
                     }
+                }
+
+                @include tablet {
+                    width: 100%;
                 }
             }
 
