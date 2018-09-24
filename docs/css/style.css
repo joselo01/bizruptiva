@@ -700,7 +700,8 @@ header {
                 margin: -5px 0 0 10px; }
       @media (max-width: 768px) {
         .proyectos .banner-proyectos .content-eco {
-          width: 100%; } }
+          width: 100%;
+          height: 50%; } }
     .proyectos .banner-proyectos .scroll-bottom {
       position: absolute;
       bottom: 0;
@@ -725,7 +726,8 @@ header {
             width: auto; } }
       @media (max-width: 768px) {
         .proyectos .banner-proyectos .base-video {
-          width: 100%; } }
+          width: 100%;
+          height: 50%; } }
     .proyectos .banner-proyectos .contenedor-video {
       position: absolute;
       width: 100%;
