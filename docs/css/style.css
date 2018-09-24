@@ -599,6 +599,10 @@ header {
           position: relative;
           font-family: 'ralewaybold';
           font-size: 0.875em; }
+    @media (max-width: 768px) {
+      .proyectos .titulo-proyectos {
+        width: 100%;
+        height: 40px; } }
   .proyectos .banner-proyectos {
     width: 95%;
     background: url("../images/banner-proyectos.jpg") no-repeat;
@@ -737,7 +741,8 @@ header {
         height: auto; }
     @media (max-width: 768px) {
       .proyectos .banner-proyectos {
-        display: flow-root; } }
+        display: flow-root;
+        width: 100%; } }
   @media (max-width: 768px) {
     .proyectos {
       display: flow-root; } }

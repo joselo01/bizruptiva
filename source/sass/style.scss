@@ -743,6 +743,11 @@
                
             }
 
+            @include tablet {
+                width: 100%;
+                height: 40px;
+            }
+
            
         }
 
@@ -927,6 +932,7 @@
 
             @include tablet {
                 display: flow-root;
+                width: 100%;
             }
 
         }
