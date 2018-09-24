@@ -633,7 +633,8 @@ header {
         .proyectos .banner-proyectos:before {
           width: 100%;
           bottom: 0;
-          height: 50%; } }
+          height: 50%;
+          background: #313a48; } }
     .proyectos .banner-proyectos .play-video {
       position: relative;
       top: 50%;
