@@ -624,10 +624,10 @@ header {
       display: block;
       content: "";
       background: rgba(49, 58, 72, 0.9);
-      z-index: 5; }
-      @media (max-width: 768px) {
-        .proyectos .banner-proyectos:before {
-          display: none; } }
+      z-index: 5;
+      /* @include tablet {
+                    display: none;
+                } */ }
     .proyectos .banner-proyectos .play-video {
       position: relative;
       top: 50%;
@@ -727,6 +727,12 @@ header {
       .proyectos .banner-proyectos .contenedor-video iframe {
         width: 100%;
         height: auto; }
+    @media (max-width: 768px) {
+      .proyectos .banner-proyectos {
+        display: flow-root; } }
+  @media (max-width: 768px) {
+    .proyectos {
+      display: flow-root; } }
 
 .bizruptores {
   display: -webkit-box;
