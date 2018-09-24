@@ -78,6 +78,12 @@
             width: 100%;
             position: relative;
             margin: 0 auto 160px auto;
+
+            @include tablet {
+                margin-bottom: 50px;
+                padding: 0;
+            }
+
             padding: 0 30px;
 
             .elemento-row {
@@ -122,6 +128,10 @@
                         display: inline-block;
                         vertical-align: middle;
                         margin-left: 35px;
+
+                        @include tablet {
+                            width: 80%;
+                        }
                     }
 
                     .btn-contacto {
@@ -140,6 +150,10 @@
                             font-family: 'ralewaybold';
                             font-size: 0.875em;
                             text-decoration: none;
+                        }
+
+                        @include tablet {
+                            display: none;
                         }
                     }
                 }
@@ -274,6 +288,10 @@
                 }
             }
         }
+
+        @include tablet {
+            padding: 50px 10px 0 10px;
+        }
     }
 
     .container-header {
@@ -289,6 +307,12 @@
                 transform: rotate(-90deg);
                 position: absolute;
                 bottom: 20%;
+                width: 100px;
+                left: -20px;
+
+                @include desktop {
+                    left: -30px;
+                }
 
                 .siguenos {
                     display: inline-block;
@@ -316,6 +340,16 @@
                         }
                     }
                 }
+
+                @include tablet {
+                    transform: none;
+                    position: relative;
+                    left: auto;
+                }
+            }
+
+            @include tablet {
+                display: none;
             }
         }
 
@@ -325,6 +359,11 @@
             display: flex;
             justify-content: space-between;
             position: relative;
+
+            @include tablet {
+                width: 100%;
+                flex-direction: column;
+            }
 
             .box-video {
                 width: 50%;
@@ -376,6 +415,10 @@
                             margin: -7px 10px 0 5px;
                         }
                     }
+
+                    @include tablet {
+                        display: none;
+                    }
                 }
 
                 .player {
@@ -390,6 +433,10 @@
                         text-align: center;
                         top: 35%;
                     }
+                }
+
+                @include tablet {
+                    width: 100%;
                 }
             }
 
@@ -515,6 +562,10 @@
 
                     }
                 }
+
+                @include tablet {
+                    width: 100%;
+                }
             }
 
             .scroll-bottom {
@@ -554,6 +605,10 @@
                 position: absolute;
                 top: 50%;
 
+                @include desktop {
+                    left: -10px;
+                }
+
                 .siguenos {
                     display: inline-block;
                     vertical-align: middle;
@@ -567,7 +622,27 @@
                         font-family: 'ralewaybold';
                         font-size: 0.875em;
                     }
+
+                    @include tablet {
+                        display: table-cell;
+                    }
                 }
+
+                @include tablet {
+                    transform: none;
+                    position: relative;
+                    left: auto;
+                    top: auto;
+                    height: 100%;
+                    display: table;
+                    width: 100%;
+                }
+            }
+
+            @include tablet {
+                width: 100%;
+                text-align: center;
+                height: 80px;
             }
         }
 
@@ -594,9 +669,14 @@
                     display: block;
 
                     p {
-                        font-family: 'ralewaybold';
+                        font-family: 'ralewayregular';
                         font-size: 1.6em;
                         margin: 0;
+
+                        @include tablet {
+                            font-size: 0.875em;
+                            
+                        }
                     }
                 }
             }
@@ -610,6 +690,15 @@
                 height: 50px;
                 cursor: pointer;
             }
+
+            @include tablet {
+                width: 100%;
+            }
+        }
+
+        @include tablet {
+            width: 100%;
+            flex-direction: column;
         }
     }
 
@@ -617,7 +706,7 @@
         display: flex;
         justify-content: space-between;
         background: #313a48;
-        height: 100vh;
+        height: auto;
         position: relative;
 
         .titulo-proyectos {
@@ -629,6 +718,10 @@
                 transform: rotate(-90deg);
                 position: absolute;
                 top: 50%;
+
+                @include desktop {
+                    left: -10px;
+                }
 
                 .siguenos {
                     display: inline-block;
@@ -643,8 +736,14 @@
                         font-family: 'ralewaybold';
                         font-size: 0.875em;
                     }
+
+                    
                 }
+
+               
             }
+
+           
         }
 
         .banner-proyectos {
@@ -657,6 +756,8 @@
             position: relative;
             display: flex;
             justify-content: space-between;
+            position: relative;
+            height: 100vh;
 
             &:before {
                 position: absolute;
@@ -666,23 +767,38 @@
                 display: block;
                 content: "";
                 background: rgba(49, 58, 72, .9);
+                z-index: 5;
+
+                @include tablet {
+                    display: none;
+                }
             }
 
             .play-video {
-                width: 50%;
                 position: relative;
+                top: 50%;
+                text-align: center;
+                height: 80px;
 
                 .ico-play {
                     position: absolute;
                     width: 100%;
-                    text-align: center;
-                    top: 50%;
+
+                    img {
+                        width: auto;
+                        height: auto;
+                    }
+
                 }
             }
 
             .content-eco {
                 width: 50%;
+                height: 100%;
                 position: relative;
+                right: 0;
+                top: 0;
+                z-index: 10;
 
                 .info-eco {
                     display: table;
@@ -698,7 +814,17 @@
                             font-family: 'ralewaybold';
                             font-size: 1.6em;
                             color: #fff;
-                            margin: 20px 0;
+                            margin: 20px 0px;
+                            @include apaisada {
+                                margin: 20px 30px;
+                            }
+                        }
+
+                        .titulo-2 {
+                            font-family: 'ralewaybold';
+                            font-size: 0.750em;
+                            color: #fff;
+                            color: #fff;
                         }
 
                         .descripcion-eco {
@@ -708,6 +834,10 @@
                                 color: #fff;
                                 line-height: normal;
                                 margin: 0;
+
+                                @include tablet {
+                                    line-height: 20px;
+                                }
                             }
                         }
 
@@ -740,6 +870,7 @@
                         }
                     }
                 }
+
             }
 
             .scroll-bottom {
@@ -750,7 +881,40 @@
                 width: 100%;
                 height: 50px;
                 cursor: pointer;
+                z-index: 10;
+
+                @include tablet {
+                    display: none;
+                }
             }
+
+            .base-video {
+                position: relative;
+                width: 50%;
+                height: auto;
+
+                img {
+                    width: 100%;
+                    height: auto;
+
+                    @include tablet {
+                        width: auto;
+                    }
+                }
+            }
+
+            .contenedor-video {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+
+
+                iframe {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
         }
     }
 
@@ -767,6 +931,14 @@
                 position: absolute;
                 top: 50%;
 
+                @include bigLapto {
+                    right: -5px;
+                }
+
+                @include desktop {
+                    left: -10px;
+                }
+
                 .siguenos {
                     display: inline-block;
                     vertical-align: middle;
@@ -780,7 +952,28 @@
                         font-family: 'ralewaybold';
                         font-size: 0.875em;
                     }
+
+                    @include tablet {
+                        display: table-cell;
+                        text-align: center;
+                    }
                 }
+
+                @include tablet {
+                    transform: none;
+                    position: relative;
+                    left: auto;
+                    height: 100%;
+                    display: table;
+                    width: 100%;
+                    top: 0;
+                    right: 0;
+                }
+            }
+
+            @include tablet {
+                height: 70px;
+                width: 100%;
             }
         }
 
@@ -797,7 +990,7 @@
 
                 li {
                     flex-grow: 0;
-                    min-height: 424px;
+                    height: auto;
                     width: calc(100%*(1/3) - 0px - 0px);
                     position: relative;
                     overflow: hidden;
@@ -843,6 +1036,10 @@
                         &:hover {
                             .detalle-team {
                                 display: block;
+
+                                @include tablet {
+                                    display: none;
+                                }
                             }
                         }
 
@@ -858,11 +1055,20 @@
                             display: none;
                             z-index: 10;
 
+                            @include bigLapto {
+                                top: 25%;
+                            }
+
                             .nombre {
                                 font-family: 'ralewaybold';
                                 font-size: 1.25em;
                                 color: #fff;
                                 margin-bottom: 25px;
+
+                                @include desktop {
+                                    font-size: 0.9em;
+                                    margin-bottom: 10px;
+                                }
                             }
 
                             .descripcion {
@@ -876,6 +1082,11 @@
                                     line-height: 20px;
                                     min-height: 150px;
                                     overflow: hidden;
+
+                                    @include desktop {
+                                        font-size: 0.8em;
+                                        line-height: 18px;
+                                    }
                                 }
                             }
                         }
@@ -889,6 +1100,14 @@
                             font-size: 1.25em;
                             color: #fff;
                             z-index: 5;
+
+                            @include desktop {
+                                font-size: 0.9em;
+                            }
+
+                            @include tablet {
+                                bottom: 70px;
+                            }
                         }
 
                         .team-redes {
@@ -920,14 +1139,32 @@
                             top:0;
                             right:0;
                             z-index:10;
+
+                            @include tablet {
+                                left: 0;
+                                bottom: 0;
+                                top: auto;
+                                margin: 0 0 25px 10px;
+                            }
                         }
                     }
 
-
+                    @include tablet {
+                        width: calc(100%*(1/2) - 0px - 0px);
+                    }
 
 
                 }
             }
+
+            @include tablet {
+                width: 100%;
+            }
+        }
+
+        @include tablet {
+            width: 100%;
+            flex-direction: column;
         }
     }
 
@@ -1002,7 +1239,7 @@
 
             .box {
                 flex-grow: 0;
-                min-height: 274px;
+                height: auto;
                 width: calc(100%*(1/5) - 0px - 0px);
                 position: relative;
                 overflow: hidden;
@@ -1028,26 +1265,58 @@
                         left: 0;
                         padding: 0 25px;
                         color: #fff;
-                        ont-family: 'ralewayregular';
+                        font-family: 'ralewayregular';
                         font-size: 1.05em;
+
+                        @include desktop {
+                            font-size: 0.8em;
+                        }
+
+                        @include tablet {
+                            bottom: 50%;
+                            text-align: center;
+                            font-size: 0.875em;
+                        }
                     }
                 }
 
                 &.box-2 {
                     background: #006fb9;
+
+                    @include tablet {
+                        display: none;
+                    }
                 }
 
                 &.box-3 {
                     background: #00b5d2;
+
+                    @include tablet {
+                        display: none;
+                    }
                 }
 
                 &.box-4 {
                     background: #f05574;
+
+                    @include tablet {
+                        display: none;
+                    }
                 }
 
                 &.box-5 {
                     background: #f9a61a;
+
+                    @include tablet {
+                        display: none;
+                    }
                 }
+
+                @include tablet {
+                    width: calc(100%*(1/1) - 0px - 0px);
+                    width: 100%;
+                }
+
             }
         }
     }
@@ -1067,6 +1336,16 @@
             .box-footer {
                 position: relative;
                 line-height: 100px;
+
+                @include tablet {
+                    line-height: normal;
+                }
+            }
+
+            @include tablet {
+                width: 100%;
+                flex-direction: column-reverse;
+                text-align: center;
             }
         }
 
@@ -1074,5 +1353,19 @@
             line-height: 100px;
             cursor: pointer;
             //padding-left: 8.5%;
+
+            @include tablet {
+                line-height: normal;
+            }
+        }
+
+        @include tablet {
+            .logo-pie-instagram {
+                display: none;
+            }
+        }
+
+        @include tablet {
+            padding: 25px 0 20px 0;
         }
     }
