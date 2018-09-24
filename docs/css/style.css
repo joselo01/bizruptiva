@@ -639,6 +639,9 @@ header {
         .proyectos .banner-proyectos .play-video .ico-play img {
           width: auto;
           height: auto; }
+      @media (max-width: 768px) {
+        .proyectos .banner-proyectos .play-video {
+          width: 100%; } }
     .proyectos .banner-proyectos .content-eco {
       width: 50%;
       height: 100%;
@@ -698,6 +701,9 @@ header {
                 background: url("../images/arrow.png") no-repeat;
                 content: "";
                 margin: -5px 0 0 10px; }
+      @media (max-width: 768px) {
+        .proyectos .banner-proyectos .content-eco {
+          width: 100%; } }
     .proyectos .banner-proyectos .scroll-bottom {
       position: absolute;
       bottom: 0;
