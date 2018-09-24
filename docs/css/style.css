@@ -717,11 +717,17 @@ header {
                 background: url("../images/arrow.png") no-repeat;
                 content: "";
                 margin: -5px 0 0 10px; }
+            @media (max-width: 768px) {
+              .proyectos .banner-proyectos .content-eco .info-eco .elementos-eco .btn-eco {
+                margin: 0 auto; } }
           .proyectos .banner-proyectos .content-eco .info-eco .elementos-eco .eco-img {
             display: block; }
             @media (max-width: 768px) {
               .proyectos .banner-proyectos .content-eco .info-eco .elementos-eco .eco-img {
                 display: none; } }
+          @media (max-width: 768px) {
+            .proyectos .banner-proyectos .content-eco .info-eco .elementos-eco {
+              text-align: center; } }
       @media (max-width: 768px) {
         .proyectos .banner-proyectos .content-eco {
           width: 100%;

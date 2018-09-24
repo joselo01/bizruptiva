@@ -886,6 +886,10 @@
                                     margin: -5px 0 0 10px;
                                 }
                             }
+
+                            @include tablet {
+                                margin: 0 auto;
+                            }
                         }
 
                         .eco-img {
@@ -894,6 +898,10 @@
                             @include tablet {
                                 display: none;
                             }
+                        }
+
+                        @include tablet {
+                            text-align: center;
                         }
                     }
                 }
