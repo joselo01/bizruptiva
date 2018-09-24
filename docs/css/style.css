@@ -624,10 +624,10 @@ header {
       display: block;
       content: "";
       background: rgba(49, 58, 72, 0.9);
-      z-index: 5;
-      /* @include tablet {
-                    display: none;
-                } */ }
+      z-index: 5; }
+      @media (max-width: 768px) {
+        .proyectos .banner-proyectos:before {
+          width: 100%; } }
     .proyectos .banner-proyectos .play-video {
       position: relative;
       top: 50%;

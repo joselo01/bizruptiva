@@ -769,9 +769,9 @@
                 background: rgba(49, 58, 72, .9);
                 z-index: 5;
 
-                /* @include tablet {
-                    display: none;
-                } */
+                @include tablet {
+                    width: 100%;
+                }
             }
 
             .play-video {
