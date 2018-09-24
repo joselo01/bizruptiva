@@ -604,11 +604,17 @@ header {
           -webkit-transform: none;
           -ms-transform: none;
           transform: none;
-          text-align: center; } }
+          text-align: center;
+          position: relative;
+          left: auto;
+          display: table-cell;
+          vertical-align: middle;
+          top: auto; } }
     @media (max-width: 768px) {
       .proyectos .titulo-proyectos {
         width: 100%;
-        height: 70px; } }
+        height: 70px;
+        display: table; } }
   .proyectos .banner-proyectos {
     width: 95%;
     background: url("../images/banner-proyectos.jpg") no-repeat;
