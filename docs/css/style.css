@@ -745,7 +745,8 @@ header {
     @media (max-width: 768px) {
       .proyectos .banner-proyectos {
         display: flow-root;
-        width: 100%; } }
+        width: 100%;
+        background-size: 100%; } }
   @media (max-width: 768px) {
     .proyectos {
       display: flow-root; } }
