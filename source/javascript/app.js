@@ -7,6 +7,14 @@ $(document).ready(function () {
         $(".menu").fadeOut("fast");
     });
 
+    $("#menu_on").click(function () {
+        $(".menu-blanco").fadeIn("fast");
+    });
+
+    $(".close").click(function () {
+        $(".menu-blanco").fadeOut("fast");
+    });
+
     $(".open-close").click(function () {
         $(this).toggleClass('close-open');
         $(".sub-menu").slideToggle("slow");
