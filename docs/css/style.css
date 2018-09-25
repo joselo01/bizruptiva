@@ -51,6 +51,13 @@ ul {
   font-style: normal;
   font-display: auto; }
 
+@font-face {
+  font-family: 'ralewaylight';
+  src: url("../fonts/raleway-light-webfont.eot");
+  src: url("../fonts/raleway-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-light-webfont.woff") format("woff"), url("../fonts/raleway-light-webfont.ttf") format("truetype"), url("../fonts/raleway-light-webfont.svg#ralewaylight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 header {
   padding: 50px 0 0 0;
   position: relative; }
@@ -108,7 +115,7 @@ header {
           margin-left: 35px; }
           @media (max-width: 768px) {
             header .top .elemento-row .elemento-column .logo {
-              width: 80%; } }
+              width: 75%; } }
         header .top .elemento-row .elemento-column .btn-contacto {
           width: 125px;
           height: 40px;
@@ -126,6 +133,8 @@ header {
           @media (max-width: 768px) {
             header .top .elemento-row .elemento-column .btn-contacto {
               display: none; } }
+  header .menu-blanco {
+    display: none; }
   header .menu {
     background: #313a48;
     padding: 50px 35px;
@@ -220,6 +229,127 @@ header {
         color: #fff; }
       header .menu .instagram .icono-instagram {
         padding-left: 20px; }
+    @media (max-width: 768px) {
+      header .menu {
+        padding: 20px; } }
+  @media (max-width: 768px) {
+    header .menu {
+      display: none !important; }
+    header .menu-blanco {
+      background: #ffffff;
+      padding: 50px 35px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 999999;
+      display: none; }
+      header .menu-blanco .top-menu {
+        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        margin-bottom: 60px; }
+        header .menu-blanco .top-menu .close {
+          display: inline-block;
+          vertical-align: middle;
+          line-height: normal;
+          margin-right: 10px;
+          width: 50px;
+          height: 22px; }
+        header .menu-blanco .top-menu .logo-menu {
+          display: inline-block;
+          vertical-align: middle; }
+      header .menu-blanco nav {
+        display: table;
+        clear: both;
+        width: 100%;
+        content: "";
+        padding: 0 0 0 75px; }
+        header .menu-blanco nav ul li {
+          font-family: 'ralewaybold';
+          font-size: 1.05em;
+          line-height: 60px; } }
+      @media (max-width: 768px) and (max-width: 768px) {
+        header .menu-blanco nav ul li {
+          font-family: 'ralewaylight'; } }
+  @media (max-width: 768px) {
+          header .menu-blanco nav ul li a {
+            color: #313a48 !important;
+            text-decoration: none;
+            display: inline-block;
+            vertical-align: middle; }
+          header .menu-blanco nav ul li ul.sub-menu {
+            padding: 0 0 0 25px;
+            display: none; }
+            header .menu-blanco nav ul li ul.sub-menu li {
+              font-family: 'ralewayregular';
+              font-size: 0.95em;
+              line-height: 40px; }
+              header .menu-blanco nav ul li ul.sub-menu li a {
+                color: #c6cedb; }
+          header .menu-blanco nav ul li.prensa {
+            display: inline-block;
+            vertical-align: middle;
+            width: 100%;
+            position: relative; }
+            header .menu-blanco nav ul li.prensa a {
+              position: relative;
+              display: block;
+              width: 100%; }
+              header .menu-blanco nav ul li.prensa a .open-close {
+                position: absolute;
+                right: 0;
+                top: 25%;
+                width: 24px;
+                height: 24px;
+                cursor: pointer; }
+                header .menu-blanco nav ul li.prensa a .open-close:before {
+                  display: inline-block;
+                  vertical-align: top;
+                  background: url("../images/open-close-2.png") no-repeat 0 -25px;
+                  width: 24px;
+                  height: 24px;
+                  content: ""; }
+              header .menu-blanco nav ul li.prensa a .close-open {
+                position: absolute;
+                right: 0;
+                top: 25%;
+                width: 24px;
+                height: 24px;
+                cursor: pointer; }
+                header .menu-blanco nav ul li.prensa a .close-open:before {
+                  display: inline-block;
+                  vertical-align: top;
+                  background: url("../images/open-close-2.png") no-repeat 0 0;
+                  width: 24px;
+                  height: 24px;
+                  content: ""; }
+          header .menu-blanco nav ul li.active {
+            position: relative; }
+            header .menu-blanco nav ul li.active:before {
+              position: absolute;
+              top: 42%;
+              left: -30px;
+              background: url("../images/icon-mobile.png") no-repeat;
+              width: 13px;
+              height: 14px;
+              content: ""; }
+      header .menu-blanco .instagram {
+        padding: 140px 0 0 75px; }
+        header .menu-blanco .instagram .tit-siguenos {
+          color: #313a48; }
+        header .menu-blanco .instagram .icono-instagram {
+          padding-left: 20px; } }
+  @media (max-width: 768px) and (max-width: 768px) {
+    header .menu-blanco {
+      padding: 20px; } }
   @media (max-width: 768px) {
     header {
       padding: 50px 10px 0 10px; } }
@@ -314,6 +444,9 @@ header {
         margin: 0;
         text-align: left;
         color: #313a48; }
+        @media (max-width: 768px) {
+          .container-header .elemento-row .box-video h4 {
+            font-size: 1.3em; } }
       .container-header .elemento-row .box-video h3 {
         font-family: 'ralewayregular';
         font-size: 1em;
@@ -323,6 +456,9 @@ header {
         margin-top: 30px;
         line-height: 22px;
         padding-right: 25%; }
+        @media (max-width: 768px) {
+          .container-header .elemento-row .box-video h3 {
+            padding-right: 0; } }
       .container-header .elemento-row .box-video .btn-conoce-mas {
         width: 160px;
         height: 40px;
@@ -530,6 +666,9 @@ header {
         font-family: 'ralewaybold';
         font-size: 1.25em;
         margin-bottom: 60px; }
+        @media (max-width: 768px) {
+          .banner-discover .contenido-banner .centra-banner .titulo-banner {
+            margin-bottom: 10px; } }
       .banner-discover .contenido-banner .centra-banner .descripcion-banner {
         display: block; }
         .banner-discover .contenido-banner .centra-banner .descripcion-banner p {
@@ -538,7 +677,34 @@ header {
           margin: 0; }
           @media (max-width: 768px) {
             .banner-discover .contenido-banner .centra-banner .descripcion-banner p {
-              font-size: 0.875em; } }
+              font-size: 0.8em; } }
+      .banner-discover .contenido-banner .centra-banner .btn-conoce-mas {
+        display: none; }
+      @media (max-width: 768px) {
+        .banner-discover .contenido-banner .centra-banner .btn-conoce-mas {
+          width: 160px;
+          height: 40px;
+          border-radius: 50px;
+          border: 1px solid #fff;
+          font-size: 0.875em;
+          font-family: 'ralewaybold';
+          line-height: 40px;
+          margin-top: 25px;
+          display: block;
+          margin: 40px auto; }
+          .banner-discover .contenido-banner .centra-banner .btn-conoce-mas a {
+            text-decoration: none;
+            color: #fff;
+            display: block;
+            text-transform: uppercase; }
+            .banner-discover .contenido-banner .centra-banner .btn-conoce-mas a:before {
+              display: inline-block;
+              vertical-align: middle;
+              content: "";
+              width: 30px;
+              height: 30px;
+              background: url("../images/icono-mas2.png") no-repeat;
+              margin: -7px 10px 0 5px; } }
     .banner-discover .contenido-banner .scroll-bottom {
       position: absolute;
       bottom: 0;
@@ -649,7 +815,7 @@ header {
           background: #313a48; } }
     .proyectos .banner-proyectos .play-video {
       position: relative;
-      top: 50%;
+      top: 40%;
       text-align: center;
       height: 80px; }
       .proyectos .banner-proyectos .play-video .ico-play {
@@ -680,23 +846,27 @@ header {
             margin: 20px 0px; }
             @media (max-width: 425px) {
               .proyectos .banner-proyectos .content-eco .info-eco .elementos-eco .titulo-eco {
-                margin: 20px 30px; } }
+                margin: 20px 50px; } }
+            @media (max-width: 360px) {
+              .proyectos .banner-proyectos .content-eco .info-eco .elementos-eco .titulo-eco {
+                margin: 20px 40px; } }
           .proyectos .banner-proyectos .content-eco .info-eco .elementos-eco .titulo-2 {
-            font-family: 'ralewaybold';
-            font-size: 0.750em;
-            color: #fff;
-            color: #fff; }
+            display: none; }
+          @media (max-width: 768px) {
+            .proyectos .banner-proyectos .content-eco .info-eco .elementos-eco .titulo-2 {
+              font-family: 'ralewaylight';
+              font-size: 1em;
+              color: #fff;
+              color: #fff;
+              display: block; } }
           .proyectos .banner-proyectos .content-eco .info-eco .elementos-eco .descripcion-eco p {
             font-family: 'ralewaymedium';
             font-size: 1em;
             color: #fff;
-            line-height: normal;
+            line-height: 22px;
             margin: 0; }
-            @media (max-width: 768px) {
-              .proyectos .banner-proyectos .content-eco .info-eco .elementos-eco .descripcion-eco p {
-                line-height: 20px; } }
           .proyectos .banner-proyectos .content-eco .info-eco .elementos-eco .btn-eco {
-            width: 140px;
+            width: 160px;
             height: 40px;
             border: 1px solid #faa61a;
             border-radius: 20px;
@@ -708,7 +878,8 @@ header {
               font-family: 'ralewaybold';
               font-size: 0.875em;
               line-height: 40px;
-              display: block; }
+              display: block;
+              text-transform: uppercase; }
               .proyectos .banner-proyectos .content-eco .info-eco .elementos-eco .btn-eco a:after {
                 display: inline-block;
                 vertical-align: middle;
@@ -719,7 +890,7 @@ header {
                 margin: -5px 0 0 10px; }
             @media (max-width: 768px) {
               .proyectos .banner-proyectos .content-eco .info-eco .elementos-eco .btn-eco {
-                margin: 0 auto; } }
+                margin: 20px auto; } }
           .proyectos .banner-proyectos .content-eco .info-eco .elementos-eco .eco-img {
             display: block; }
             @media (max-width: 768px) {
@@ -727,7 +898,8 @@ header {
                 display: none; } }
           @media (max-width: 768px) {
             .proyectos .banner-proyectos .content-eco .info-eco .elementos-eco {
-              text-align: center; } }
+              text-align: center;
+              padding: 0 20px; } }
       @media (max-width: 768px) {
         .proyectos .banner-proyectos .content-eco {
           width: 100%;
@@ -768,8 +940,7 @@ header {
     @media (max-width: 768px) {
       .proyectos .banner-proyectos {
         display: flow-root;
-        width: 100%;
-        background-size: 100%; } }
+        width: 100%; } }
   @media (max-width: 768px) {
     .proyectos {
       display: flow-root; } }
