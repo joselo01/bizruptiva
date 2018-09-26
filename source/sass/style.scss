@@ -545,7 +545,8 @@
 
             @include tablet {
                 width: 100%;
-                flex-direction: column;
+                //lex-direction: column;
+                display: flow-root;
             }
 
             .box-video {
@@ -637,120 +638,79 @@
                 position: relative;
 
                 .position-formas {
-                    position: absolute;
-                    right: 0;
-                    width: 100%;
-                    height: 100%;
-                    z-index: 10;
+                    display: flex;
+                    justify-content: space-between;
 
-                    .magenta {
-                        width: 285px;
-                        height: 322px;
-                        position: absolute;
-                        top: 20%;
-                        right: 35%;
+                    .conos-1 {
+                        width:58%;
+                        position:relative;
+                        height:490px;
+                        z-index:15;
 
-
-                        z-index: 5;
-
-                        .titulo {
-                            font-family: 'ralewaybold';
-                            font-size: 1.25em;
-                            position: absolute;
-                            top: 50%;
-                            width: 70%;
-                            text-align: center;
-
-                            color: #fff;
+                        .cian {
+                            position:absolute;
+                            top:0;
+                            left:75%;
+                            
                         }
-                    }
 
-                    .magenta2 {
-                        width: 50px;
-                        height: 57px;
-                        position: absolute;
-                        top: 5%;
-                        right: 30px;
-
-
-                    }
-
-                    .cian {
-                        width: 86px;
-                        height: 98px;
-                        position: absolute;
-                        top: -5%;
-                        right: 45%;
-
-
-                    }
-
-                    .cian2 {
-                        width: 42px;
-                        height: 48px;
-                        position: absolute;
-                        bottom: -2%;
-                        right: 55%;
-
-
-                    }
-
-                    .azul {
-                        width: 214px;
-                        height: 246px;
-                        position: absolute;
-                        top: 50%;
-                        right: 0;
-
-                        z-index: 5;
-
-                        .titulo {
-                            font-family: 'ralewaybold';
-                            font-size: 1.25em;
-                            position: absolute;
-                            width: 70%;
-                            text-align: center;
-                            top: 45%;
-                            color: #fff;
+                        .azul2 {
+                           position:absolute;
+                           right:20px;
+                           top:140px;
+                            
                         }
-                    }
 
-                    .azul2 {
-                        width: 25px;
-                        height: 27px;
-                        position: absolute;
-                        top: 25%;
-                        right: 45%
-                    }
-
-                    .amarillo {
-                        width: 381px;
-                        height: 433px;
-                        position: absolute;
-                        bottom: 15%;
-                        right: 0;
-
-
-
-                        .titulo {
-                            font-family: 'ralewaybold';
-                            font-size: 20px;
-                            position: absolute;
-                            width: 70%;
-                            text-align: center;
-                            top: 46%;
-                            color: #fff;
+                        .magenta {
+                           position:absolute;
+                           top:90px;
+                           right:-50px;
                         }
+
+                        .cian2 {
+                            position:absolute;
+                            bottom:25px;
+                            left:65%;
+                            
+                        }
+
+                        
                     }
 
-                    .amarillo2 {
-                        width: 54px;
-                        height: 61px;
-                        position: absolute;
-                        bottom: -10%;
-                        right: 65px;
+                    .conos-2 {
+                        width:42%;
+                        position:relative;
+                        z-index:10;
+
+                        .amarillo {
+                            position: absolute;
+                            right: 0;
+                            top: -10%;
+                        }
+                        
+                        .magenta2 {
+                            position:absolute;
+                            top:0;
+                            right:0;
+                            padding-right:30px;
+                        }
+
+                        .azul {
+                            position:absolute;
+                            right:0;
+                            bottom:0;
+                        }
+
+                        .amarillo2 {
+                            position:absolute;
+                            right:0;
+                            bottom:-15px;
+                            padding-right:40px;
+                        }
 
 
+
+            
                     }
                 }
 
