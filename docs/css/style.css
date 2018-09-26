@@ -427,13 +427,7 @@ header {
     @media (max-width: 768px) {
       .container-header .elemento-row {
         width: 100%;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -moz-box-orient: vertical;
-        -moz-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column; } }
+        display: flow-root; } }
     .container-header .elemento-row .box-video {
       width: 50%;
       margin-top: 22px;
@@ -501,85 +495,59 @@ header {
       height: 450px;
       position: relative; }
       .container-header .elemento-row .formas .position-formas {
-        position: absolute;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 10; }
-        .container-header .elemento-row .formas .position-formas .magenta {
-          width: 285px;
-          height: 322px;
-          position: absolute;
-          top: 20%;
-          right: 35%;
-          z-index: 5; }
-          .container-header .elemento-row .formas .position-formas .magenta .titulo {
-            font-family: 'ralewaybold';
-            font-size: 1.25em;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
+        .container-header .elemento-row .formas .position-formas .conos-1 {
+          width: 58%;
+          position: relative;
+          height: 490px;
+          z-index: 15; }
+          .container-header .elemento-row .formas .position-formas .conos-1 .cian {
             position: absolute;
-            top: 50%;
-            width: 70%;
-            text-align: center;
-            color: #fff; }
-        .container-header .elemento-row .formas .position-formas .magenta2 {
-          width: 50px;
-          height: 57px;
-          position: absolute;
-          top: 5%;
-          right: 30px; }
-        .container-header .elemento-row .formas .position-formas .cian {
-          width: 86px;
-          height: 98px;
-          position: absolute;
-          top: -5%;
-          right: 45%; }
-        .container-header .elemento-row .formas .position-formas .cian2 {
-          width: 42px;
-          height: 48px;
-          position: absolute;
-          bottom: -2%;
-          right: 55%; }
-        .container-header .elemento-row .formas .position-formas .azul {
-          width: 214px;
-          height: 246px;
-          position: absolute;
-          top: 50%;
-          right: 0;
-          z-index: 5; }
-          .container-header .elemento-row .formas .position-formas .azul .titulo {
-            font-family: 'ralewaybold';
-            font-size: 1.25em;
+            top: 0;
+            left: 75%; }
+          .container-header .elemento-row .formas .position-formas .conos-1 .azul2 {
             position: absolute;
-            width: 70%;
-            text-align: center;
-            top: 45%;
-            color: #fff; }
-        .container-header .elemento-row .formas .position-formas .azul2 {
-          width: 25px;
-          height: 27px;
-          position: absolute;
-          top: 25%;
-          right: 45%; }
-        .container-header .elemento-row .formas .position-formas .amarillo {
-          width: 381px;
-          height: 433px;
-          position: absolute;
-          bottom: 15%;
-          right: 0; }
-          .container-header .elemento-row .formas .position-formas .amarillo .titulo {
-            font-family: 'ralewaybold';
-            font-size: 20px;
+            right: 20px;
+            top: 140px; }
+          .container-header .elemento-row .formas .position-formas .conos-1 .magenta {
             position: absolute;
-            width: 70%;
-            text-align: center;
-            top: 46%;
-            color: #fff; }
-        .container-header .elemento-row .formas .position-formas .amarillo2 {
-          width: 54px;
-          height: 61px;
-          position: absolute;
-          bottom: -10%;
-          right: 65px; }
+            top: 90px;
+            right: -50px; }
+          .container-header .elemento-row .formas .position-formas .conos-1 .cian2 {
+            position: absolute;
+            bottom: 25px;
+            left: 65%; }
+        .container-header .elemento-row .formas .position-formas .conos-2 {
+          width: 42%;
+          position: relative;
+          z-index: 10; }
+          .container-header .elemento-row .formas .position-formas .conos-2 .amarillo {
+            position: absolute;
+            right: 0;
+            top: -10%; }
+          .container-header .elemento-row .formas .position-formas .conos-2 .magenta2 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding-right: 30px; }
+          .container-header .elemento-row .formas .position-formas .conos-2 .azul {
+            position: absolute;
+            right: 0;
+            bottom: 0; }
+          .container-header .elemento-row .formas .position-formas .conos-2 .amarillo2 {
+            position: absolute;
+            right: 0;
+            bottom: -15px;
+            padding-right: 40px; }
       @media (max-width: 768px) {
         .container-header .elemento-row .formas {
           width: 100%; } }
