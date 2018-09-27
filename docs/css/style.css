@@ -512,8 +512,8 @@ header {
           z-index: 15; }
           .container-header .elemento-row .formas .position-formas .conos-1 .cian {
             position: absolute;
-            top: 0;
-            left: 75%; }
+            top: -20px;
+            left: 70%; }
           .container-header .elemento-row .formas .position-formas .conos-1 .azul2 {
             position: absolute;
             right: 20px;
@@ -522,10 +522,21 @@ header {
             position: absolute;
             top: 90px;
             right: -50px; }
+            .container-header .elemento-row .formas .position-formas .conos-1 .magenta .titulo {
+              position: absolute;
+              top: 46%;
+              text-align: center;
+              width: 70%;
+              font-family: 'ralewaybold';
+              color: #fff;
+              font-size: 1.250em; }
           .container-header .elemento-row .formas .position-formas .conos-1 .cian2 {
             position: absolute;
             bottom: 25px;
             left: 65%; }
+          @media (max-width: 1440px) {
+            .container-header .elemento-row .formas .position-formas .conos-1 {
+              width: 50%; } }
         .container-header .elemento-row .formas .position-formas .conos-2 {
           width: 42%;
           position: relative;
@@ -534,6 +545,14 @@ header {
             position: absolute;
             right: 0;
             top: -10%; }
+            .container-header .elemento-row .formas .position-formas .conos-2 .amarillo .titulo {
+              position: absolute;
+              top: 46%;
+              text-align: center;
+              width: 70%;
+              font-family: 'ralewaybold';
+              color: #fff;
+              font-size: 1.250em; }
           .container-header .elemento-row .formas .position-formas .conos-2 .magenta2 {
             position: absolute;
             top: 0;
@@ -543,14 +562,26 @@ header {
             position: absolute;
             right: 0;
             bottom: 0; }
+            .container-header .elemento-row .formas .position-formas .conos-2 .azul .titulo {
+              position: absolute;
+              top: 46%;
+              text-align: center;
+              width: 70%;
+              font-family: 'ralewaybold';
+              color: #fff;
+              font-size: 1.250em; }
           .container-header .elemento-row .formas .position-formas .conos-2 .amarillo2 {
             position: absolute;
             right: 0;
             bottom: -15px;
             padding-right: 40px; }
+          @media (max-width: 1440px) {
+            .container-header .elemento-row .formas .position-formas .conos-2 {
+              width: 50%; } }
       @media (max-width: 768px) {
         .container-header .elemento-row .formas {
-          width: 100%; } }
+          width: 100%;
+          margin-top: 80px; } }
     .container-header .elemento-row .scroll-bottom {
       position: absolute;
       bottom: 0;
