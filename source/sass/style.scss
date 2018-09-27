@@ -649,8 +649,8 @@
 
                         .cian {
                             position:absolute;
-                            top:0;
-                            left:75%;
+                            top: -20px;
+                            left: 70%;
                             
                         }
 
@@ -665,6 +665,16 @@
                            position:absolute;
                            top:90px;
                            right:-50px;
+
+                           .titulo {
+                            position: absolute;
+                            top: 46%;
+                            text-align: center;
+                            width: 70%;
+                            font-family: 'ralewaybold';
+                            color:#fff;
+                            font-size:1.250em;
+                           }
                         }
 
                         .cian2 {
@@ -672,6 +682,10 @@
                             bottom:25px;
                             left:65%;
                             
+                        }
+
+                        @include bigLapto {
+                            width:50%;
                         }
 
                         
@@ -686,6 +700,16 @@
                             position: absolute;
                             right: 0;
                             top: -10%;
+
+                            .titulo {
+                                position: absolute;
+                                top: 46%;
+                                text-align: center;
+                                width: 70%;
+                                font-family: 'ralewaybold';
+                                color:#fff;
+                                font-size:1.250em;
+                               }
                         }
                         
                         .magenta2 {
@@ -699,6 +723,16 @@
                             position:absolute;
                             right:0;
                             bottom:0;
+
+                            .titulo {
+                                position: absolute;
+                                top: 46%;
+                                text-align: center;
+                                width: 70%;
+                                font-family: 'ralewaybold';
+                                color:#fff;
+                                font-size:1.250em;
+                               }
                         }
 
                         .amarillo2 {
@@ -708,7 +742,9 @@
                             padding-right:40px;
                         }
 
-
+                        @include bigLapto {
+                            width:50%;
+                        }
 
             
                     }
@@ -716,6 +752,7 @@
 
                 @include tablet {
                     width: 100%;
+                    margin-top:80px;
                 }
             }
 
